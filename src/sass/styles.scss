@@ -1,0 +1,22 @@
+@import "base/variables";
+@import "base/mixins";
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/buttons";
+@import "blocks/advantages";
+@import "base/media";
+
+* {
+    font-family: MuseoSansCyrl, serif;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-weight: 300;
+}
+.container{
+    max-width: 950px;
+    margin: 0 auto;
+}

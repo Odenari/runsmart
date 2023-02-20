@@ -1,45 +1,32 @@
 @font-face {
-    font-family: 'MuseoModerno';
-    src: url('../fonts/MuseoModerno-Light.eot');
-    src: url('../fonts/MuseoModerno-Light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/MuseoModerno-Light.woff2') format('woff2'),
-        url('../fonts/MuseoModerno-Light.woff') format('woff'),
-        url('../fonts/MuseoModerno-Light.ttf') format('truetype');
-    font-weight: 300;
+    font-family: 'MuseoSansCyrl';
+    src: url('../fonts/museosanscyrl-100.ttf') format('truetype');
+    font-weight: 100;
     font-style: normal;
 }
-
 @font-face {
-    font-family: 'MuseoModerno';
-    src: url('../fonts/MuseoModerno-Bold.eot');
-    src: url('../fonts/MuseoModerno-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/MuseoModerno-Bold.woff2') format('woff2'),
-        url('../fonts/MuseoModerno-Bold.woff') format('woff'),
-        url('../fonts/MuseoModerno-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'MuseoSansCyrl';
+  src: url('../fonts/museosanscyrl-300.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
 }
-
 @font-face {
-    font-family: 'MuseoModerno';
-    src: url('../fonts/MuseoModerno-Regular.eot');
-    src: url('../fonts/MuseoModerno-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/MuseoModerno-Regular.woff2') format('woff2'),
-        url('../fonts/MuseoModerno-Regular.woff') format('woff'),
-        url('../fonts/MuseoModerno-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'MuseoSansCyrl';
+  src: url('../fonts/museosanscyrl-500.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
 }
-
 @font-face {
-    font-family: 'MuseoModerno';
-    src: url('../fonts/MuseoModerno-Medium.eot');
-    src: url('../fonts/MuseoModerno-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/MuseoModerno-Medium.woff2') format('woff2'),
-        url('../fonts/MuseoModerno-Medium.woff') format('woff'),
-        url('../fonts/MuseoModerno-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'MuseoSansCyrl';
+  src: url('../fonts/museosanscyrl-700.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: url('../fonts/museosanscyrl-900.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
 }
 
 /* Icons font */
