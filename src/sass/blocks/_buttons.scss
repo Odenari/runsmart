@@ -5,10 +5,12 @@
   height: 32px;
   font-weight: 500;
   background: $maincolor;
+  text-align: center;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  font-weight: 500;
   font-size: 12px;
   color: #fff;
   &_main {
@@ -16,5 +18,11 @@
     height: 50px;
     font-size: 16px;
     margin-bottom: 6px;
+  }
+  &_submit {
+    width: 100%;
+    margin-top: 20px;
+    height: 60px;
+    font-size: 16px;
   }
 }
