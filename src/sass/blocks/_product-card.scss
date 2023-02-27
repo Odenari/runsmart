@@ -1,0 +1,125 @@
+
+.product-card {
+  width: 303px;
+  min-height: 442px;
+  padding: 20px;
+  border: 2px solid #e8e8e8;
+  overflow: hidden;
+  &__image {
+    display: block;
+    max-width: 100%;
+    height: 200px;
+    margin: 0 auto;
+  }
+  &__title {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    font-size: 16px;
+  }
+  &__descr {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  &__moreInfo {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: $maincolor;
+    cursor: pointer;
+    &:hover {
+      color: $maincolor;
+    }
+  }
+  &__divider {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-bottom: none;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__oldPrice {
+    margin-top: 4px;
+    font-size: 14px;
+    text-decoration-line: line-through;
+  }
+  &__currentPrice {
+    margin-top: 6px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #050505;
+  }
+  &__content-wrapper {
+    display: flex;
+    width: calc(200% + 40px);
+  }
+  &__model-promo {
+    width: 50%;
+    margin-right: 0px;
+    transform: translateX(100%);
+    transition: 0.5s all;
+  }
+  
+  &__model-descr {
+    width: 50%;
+    transition: 0.5s all;
+    margin-left: 20px;
+    transform: translateX(0%);
+  }
+
+  &__list {
+    padding-left: 15px;
+    padding-right: 20px;
+    margin-bottom: 0;
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #555;
+    li {
+      position: relative;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__specs-item:before {
+    content:"";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: $maincolor;
+    top: 6px;
+    left: -20px;
+  }
+
+  &__promo-side, &__descr-side {
+    display: block;
+    margin: 16px 0 16px 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: $maincolor;
+  }
+
+}
+
+.product-card__model-promo.active{
+  margin-right: 20px;
+  transform: translateX(0%);
+}
+
+.product-card__model-descr.active{
+  margin-left: 0px;
+  transform: translateX(-100%);
+}

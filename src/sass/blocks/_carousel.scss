@@ -1,4 +1,5 @@
 .carousel {
+  min-height: 580px;
   padding: 91px 0;
   position: relative;
   &__inner {
@@ -24,17 +25,10 @@
     left: auto;
     right: -66px;
 }
-.slick-dots {
-  width: 100%;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  
-  button {
-    width: 35px;
-    height: 15px;
-    content: none;
+  .slick-dots {
+    li {
+      display: none; 
+    }
   }
-}
-
+  
 }

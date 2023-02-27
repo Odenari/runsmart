@@ -50,7 +50,7 @@
     flex-direction: column;
     &__official {
       text-transform: uppercase;
-      &__title{
+      &__title {
         font-size: 18px;
       }
       &__companies {
@@ -65,7 +65,11 @@
   }
   .button {
     margin: 15px 0;
-    background: linear-gradient(44deg, rgb(180, 5, 5) 20%, rgb(91, 44, 191) 100%);
+    background: linear-gradient(
+      44deg,
+      rgb(180, 5, 5) 20%,
+      rgb(91, 44, 191) 100%
+    );
   }
   .promo {
     padding: 10px 0 10px 0;
@@ -140,6 +144,67 @@
         padding: 10px;
         height: 40px;
       }
+    }
+  }
+  .carousel {
+    min-height: 400px;
+    padding: 65px 0 35px;
+    &__inner {
+      width: 300px;
+      img {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+    .slick-prev,
+    .slick-next {
+      img{
+        display: none;
+        opacity: 0;
+      }
+    }
+    .slick-dots {
+      display: flex;
+      margin-top: 20px;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: 100%;
+      li {
+        margin: 0 15px;
+        display: block;
+        font-size: 0;
+        border: none;
+        width: 10px;
+        aspect-ratio: 1/1;
+        border-radius: 100%;
+        background-color: $maincolor;
+      }
+      button {
+        display: none;
+      }
+    }
+    // .slick-dots li {
+    //   .slick-active {
+        
+    //       background-color: #7cd614;
+        
+    //   }
+    // }
+    .slick-dots {
+      li.slick-active{
+        background-color:rgb(15, 93, 188);
+      }
+    }
+  }
+  .catalog {
+    &-tabs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 320px;
+      margin-top: 15px;
+      margin-bottom: 15px;
     }
   }
 }
