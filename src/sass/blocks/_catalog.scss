@@ -1,5 +1,5 @@
 .catalog {
-  max-height: 1100px;
+  min-height: 1100px;
 }
 
 .catalog-tabs {
@@ -36,7 +36,7 @@
     color: #fff;
     border:none;
     background: $maincolor;
-  &:hover {
+  &:hover, &:focus {
     transition: 0.5s ease box-shadow;
     box-shadow: 2px 2px 15px red;
   }
@@ -45,6 +45,7 @@
 
 .catalog-content {
   display: none;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 18px;
   margin-bottom: 20px;

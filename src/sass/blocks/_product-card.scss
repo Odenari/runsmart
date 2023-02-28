@@ -1,10 +1,13 @@
-
 .product-card {
   width: 303px;
   min-height: 442px;
   padding: 20px;
   border: 2px solid #e8e8e8;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   &__image {
     display: block;
     max-width: 100%;
@@ -40,9 +43,8 @@
     }
   }
   &__divider {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    border-bottom: none;
+    margin-top: 20px;
+    border: 1px solid #e8e8e8;
   }
   &__footer {
     display: flex;
@@ -68,13 +70,15 @@
     margin-right: 0px;
     transform: translateX(100%);
     transition: 0.5s all;
+    position: relative;
   }
-  
+
   &__model-descr {
     width: 50%;
     transition: 0.5s all;
     margin-left: 20px;
     transform: translateX(0%);
+    position: relative;
   }
 
   &__list {
@@ -93,7 +97,7 @@
   }
 
   &__specs-item:before {
-    content:"";
+    content: "";
     position: absolute;
     width: 6px;
     height: 6px;
@@ -102,24 +106,26 @@
     left: -20px;
   }
 
-  &__promo-side, &__descr-side {
+  &__promo-side,
+  &__descr-side {
     display: block;
-    margin: 16px 0 16px 0;
-    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
     font-weight: 500;
     font-size: 14px;
     line-height: 14px;
     color: $maincolor;
   }
-
 }
 
-.product-card__model-promo.active{
+.product-card__model-promo.active {
   margin-right: 20px;
   transform: translateX(0%);
 }
 
-.product-card__model-descr.active{
+.product-card__model-descr.active {
   margin-left: 0px;
   transform: translateX(-100%);
 }
