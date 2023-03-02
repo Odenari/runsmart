@@ -24,4 +24,15 @@
   &-mt-25 {
     margin-top: 25px;
   }
+  .error {
+    border: 1px solid red;
+  }
+  label.error{
+    border: none;
+    text-align: center;
+    margin: 10px 0;
+  }
+  &-validation {
+    label.error {color: #fff;}
+  }
 }

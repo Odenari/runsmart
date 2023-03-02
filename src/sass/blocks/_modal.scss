@@ -10,7 +10,8 @@
   width: 382px;
   min-height: 402px;
   padding: 40px 34px 40px;
-  position: absolute;
+  position: fixed;
+  z-index: 1;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -47,7 +48,4 @@
   }
 }
 
-#consultation, #order {display: none;}
-// .modal-mini {
-//   display: none;
-// }
+.overlay, #consultation, #order, #thanks {display: none;}
