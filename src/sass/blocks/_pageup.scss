@@ -1,0 +1,12 @@
+.pageup {
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: calc(70px - 0.25rem);
+    margin: 2rem;
+    cursor: pointer;
+    img {
+        width: 100%;
+    }
+}
